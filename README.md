@@ -57,7 +57,7 @@ There we have it, the JavaScript will make all your elements equal heights!
 
 You may have noticed we also initialise the plugin on window resizing as well, which means this’ll slot nicely into your responsive designs…
 
-# What if I want multiple sets on a page?
+## What if I want multiple sets on a page?
 
 Say you have the following HTML:
 
@@ -103,6 +103,6 @@ to make the JavaScript work on both these groups independently, simply drop in t
 
 and there we have it, multiple groups acted on and an equalised.
 
-# What about the browsers, will somebody please think of the browsers?
+## What about the browsers, will somebody please think of the browsers?
 
 This works in IE9 and above. If it’s below IE9, then the plugin just doesn’t run, it won’t error or anything awful like that.
