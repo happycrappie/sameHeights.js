@@ -1,3 +1,5 @@
+It's all from [Ben Howdle's website](http://benhowdle.im/easy-peasy-equal-heights.html). I just wanted to have it saved on a GitHub repo. Thanks, Ben!
+
 # Making elements the same height
 
 Sometimes you might have a need to grab a few elements, and then make them the same height. In an ideal world, you’d use CSS, but this isn’t an ideal world, so we must use JavaScript!
