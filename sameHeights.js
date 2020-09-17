@@ -1,19 +1,9 @@
-function sameHeights(selector) {
-  var selector = selector || '[data-key="sameHeights"]',
-    query = document.querySelectorAll(selector),
-    elements = query.length,
-    max = 0;
-  if (elements) {
-    while (elements--) {
-      var element = query[elements];
-      if (element.clientHeight > max) {
-        max = element.clientHeight;
-      }
-    }
-    elements = query.length;
-    while (elements--) {
-      var element = query[elements];
-      element.style.height = max + 'px';
-    }
-  }
+function sameHeights(selector = '[data-key="sameHeights"]') {
+  const query = document.querySelectorAll(selector);
+  if(!(query.length)) return;
+  const heights = Array.from(query, (item)=> item.clientHeight);
+  const max = Math.max(...heights);
+  query.forEach(element => {
+    element.style.height = `${max}px`;
+  });
 }
